@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="vertical"
+        app:behavior_hideable="true"
+        app:behavior_peekHeight="50dp"
+        app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/back_color"
+            android:gravity="center"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Frequently"
+                android:padding="10dp"
+                android:textAllCaps="true"
+                android:background="@color/back_color"
+                android:textColor="#444"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:gravity="right"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:text="₹435.00"></TextView>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="On Weekends"
+                android:textAllCaps="true"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textColor="#444" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="On Weekdays"
+                android:textAllCaps="true"
+                android:padding="5dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:textColor="#444" />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Every day"
+            android:textAllCaps="true"
+            android:padding="5dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:textColor="#444"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="Flat No 404, Skyline Apartments, Vizag - 500576" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="#000"
+            android:visibility="gone"
+            android:foreground="?attr/selectableItemBackground"
+            android:text="PROCEED PAYMENT"
+            android:textColor="#fff" />
+
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>
