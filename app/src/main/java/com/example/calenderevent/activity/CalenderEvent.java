@@ -597,7 +597,7 @@ public class CalenderEvent extends AppCompatActivity implements View.OnClickList
         int rows = getContentResolver().update(updateUri, values, null, null);
         Log.i(TAG, "Rows updated: " + rows);*/
 
-        long calID = prefManager.getPreferenceLong(getApplicationContext(),PrefConstant.CALENDAR_EVENT_ID);
+        /*long calID = prefManager.getPreferenceLong(getApplicationContext(),PrefConstant.CALENDAR_EVENT_ID);
         ContentResolver cr = getContentResolver();
         ContentValues values = new ContentValues();
         Uri updateUri = null;
@@ -612,7 +612,10 @@ public class CalenderEvent extends AppCompatActivity implements View.OnClickList
             Snackbar snackbar =Snackbar.make(coordinatorLayout,"Saved..",Snackbar.LENGTH_SHORT);
             snackbar.show();
         }
-        Log.i(TAG, "Rows updated: " + rows);
+        Log.i(TAG, "Rows updated: " + rows);*/
+
+        deleteCalendarData();
+        setCalenderData();
     }
 }
 
